@@ -16,8 +16,15 @@
 .header__link{
   font-family: fantasy, cursive;
 }
-.header__title {
-  display: none;
+.header__title,
+.task-add__label {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  overflow: hidden;
+  position: absolute;
 }
 
 @media (max-width: 768px) {
@@ -96,11 +103,6 @@
 }
 
 /* New Task */
-.task-add__label{
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-}
 .input-text_size_l {
   width: 318px;
 }
