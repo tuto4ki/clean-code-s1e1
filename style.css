@@ -47,7 +47,7 @@
   margin: 0;
   padding: 0px;
 }
-.item,
+.list__item,
 .title {
   list-style: none;
 }
@@ -106,7 +106,7 @@
 }
 
 /* Task list */
-.item {
+.list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -114,7 +114,11 @@
   justify-content: space-between;
   align-items: center;
 }
-.item > * {
+.input-checkbox,
+.task,
+.input-text_size_s,
+.button_set_edit,
+.button_set_delete {
   vertical-align: middle;
 }
 .input-checkbox {
@@ -145,13 +149,13 @@
 }
 
 /* Edit Task */
-.item .input-text {
+.list__item .input-text {
   display: none;
 }
-.item_edit_mode .input-text {
+.list__item_edit_mode .input-text {
   display: inline-block;
   width: 224px;
 }
-.item_edit_mode .task {
+.list__item_edit_mode .task {
   display: none;
 }
