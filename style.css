@@ -16,6 +16,9 @@
 .header__link{
   font-family: fantasy, cursive;
 }
+.header__title {
+  display: none;
+}
 
 @media (max-width: 768px) {
 
